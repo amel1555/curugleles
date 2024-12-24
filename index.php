@@ -123,10 +123,6 @@
       <div class="step">
         <img src="assets/icons/destination-icon.png" alt="Ikon Pilih Destinasi" />
         <h4>Pilih Destinasi</h4>
-        <p>1. Bumi Perkemahan : Nikmati suasana alam yang tenang.</p>
-        <p>2. Curug : Lihat keindahan air terjun yang mengalir.</p>
-        <p>3. Kolam Pemandian : Bersantai di kolam alami yang segar.</p>
-      </div>
 
       <!-- Langkah 2: Lakukan Pembayaran -->
       <div class="step">
