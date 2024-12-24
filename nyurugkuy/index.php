@@ -66,7 +66,7 @@
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3966.035307020964!2d106.8417520742502!3d-6.25907966127779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTUnMzIuNyJTIDEwNsKwNTAnMzkuNiJF!5e0!3m2!1sid!2sid!4v1733404246135!5m2!1sid!2sid"
           width="600"
-          height="500"
+          height="450"
           style="border: 0; border-radius: 15px"
           allowfullscreen=""
           loading="lazy"
@@ -123,15 +123,21 @@
       <div class="step">
         <img src="assets/icons/destination-icon.png" alt="Ikon Pilih Destinasi" />
         <h4>Pilih Destinasi</h4>
+        <p>1. Datar: Nikmati suasana alam yang tenang.</p>
+        <p>2. Curug: Lihat keindahan air terjun yang mengalir.</p>
+        <p>3. Kolam Pemandian: Bersantai di kolam alami yang segar.</p>
+      </div>
 
       <!-- Langkah 2: Lakukan Pembayaran -->
       <div class="step">
+        <img src="assets/icons/payment-icon.png" alt="Ikon Pembayaran" />
         <h4>Lakukan Pembayaran</h4>
         <p>Bayar reservasi melalui metode yang tersedia seperti QRIS.</p>
       </div>
 
       <!-- Langkah 3: Siapkan Perlengkapan -->
       <div class="step">
+        <img src="assets/icons/gear-icon.png" alt="Ikon Perlengkapan" />
         <h4>Siapkan Perlengkapan</h4>
         <p>Bawa semua perlengkapan camping yang diperlukan sebelum berangkat.</p>
       </div>
@@ -140,6 +146,7 @@
     <!-- Kartu Perjalanan -->
     <div class="destinations">
       <div class="curug">
+        <img src="assets/images/curug leles 1.jpg" alt="Foto Curug" />
         <h3>Perjalanan ke Curug</h3>
         <p>14-16 Okt | by Amelia Nurul</p>
         <p class="info">24 orang pergi</p>
