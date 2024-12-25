@@ -117,18 +117,9 @@
   }
   
   /* end home n navbar */
-  
-  /* section service */
-  /* .btn {
-    background-color: #a72887;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1rem;
-    cursor: pointer;
-  } */
+
+  /*section service*/
+
   .btn:hover {
     background-color: #218838;
   }
@@ -145,7 +136,7 @@
     padding: 20px;
   }
   .background-overlay {
-    background-color: rgba(24, 23, 23, 0.9);
+    background-color: rgba(90, 33, 33, 0.9);
     padding: 120px;
     border-radius: 5px;
   }
@@ -232,172 +223,244 @@
     font-size: 1rem;
     color: #555;
   }
-  
-  /* Section Destination */
+
+  /*end section service*/
+
+  /*section destination*/
+
   .section {
-    padding: 10px 20px;
+    padding: 50px 50px;
   }
+
   .section h2 {
     text-align: center;
     margin-bottom: 30px;
     color: black;
+    font-size: 30px; 
   }
+
   .section h6 {
     text-align: center;
     color: black;
     margin-top: -20px;
   }
-  
+
   .popular-destinations {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
   }
+
   .map {
     flex: 1;
-    min-width: 300px;
-    max-width: 40%;
+    min-width: 400px; /* Mengatur ukuran minimal */
+    max-width: 50%; /* Membatasi lebar maksimal map */
   }
+
   .map img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
   }
+
   .destinations {
     flex: 2;
     min-width: 300px;
-    max-width: 55%;
+    max-width: 45%; /* Mengatur kotak destinasi agar lebih kecil dan disesuaikan dengan map */
     display: flex;
     flex-direction: column;
     gap: 10px;
     transition: transform 0.3s ease-in;
   }
+
   .destination-card:hover {
     transform: translateY(-5px);
   }
+
   .destination-card {
     display: flex;
     gap: 20px;
     background: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     align-items: center;
     text-align: center;
-    width: 32rem;
-    height: 10rem;
+    width: 100%;
+    height: auto; /* Mengatur tinggi card */
   }
-  
+
   .destination-card img {
     width: 100px;
     height: 100px;
-    border-radius: 8px;
+    border-radius: 5px;
     object-fit: cover;
   }
+
   .destination-card h3 {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 15px; /* Mengatur ukuran font */
     color: #333;
     font-weight: bold;
   }
+
   .destination-card p {
     margin: 5px 0;
     color: #555;
     font-size: 0.9rem;
   }
-  
-  /* Mudah */
-  .curug {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    text-align: center;
-    width: 15rem;
-    height: auto;
-  }
-  .curug img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  .curug h3 {
-    margin-bottom: 0.2rem;
-    font-size: 0.8rem;
-    text-align: left;
-    color: black;
-  }
-  .curug p {
-    margin-bottom: 10px;
-    font-size: 0.5rem;
-    text-align: left;
-    color: #686464;
-  }
-  
-  @media (max-width: 768px) {
-    .popular-destinations {
-      flex-direction: column;
-    }
-    .map,
-    .destinations {
-      max-width: 100%;
-    }
-    .destination-card {
-      flex-direction: column;
-      text-align: center;
-      white-space: normal;
-    }
-  }
-  .text-wrap {
-    word-break: break-word;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-  }
-  /* End Destination */
-  
-  /* Section Gallery */
+
+  /*end section destination*/
+
+  /*section gallery*/
+
   .gallery-section {
     text-align: center;
-    padding: 5px 20px;
+    padding: 100px 100px; /* Perbesar padding untuk menambah area abu-abu */
     color: black;
-  }
-  .gallery-section h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-  .gallery {
+    background-color: #bdbaba;
+    overflow: hidden; /* Mencegah konten keluar dari batas */
+    max-width: 1400px; /* Perbesar batas maksimum lebar galeri */
+    margin: 0 auto; /* Pusatkan galeri di tengah halaman */
+    box-sizing: border-box; /* Pastikan padding tidak menambah ukuran */
+}
+
+.gallery-section h2 {
+    font-size: 2.5rem; /* Perbesar ukuran judul */
+    margin-bottom: 100px; /* Tambahkan jarak bawah judul */
+    padding: 50px 0; /* Tambahkan padding atas dan bawah judul */
+}
+
+.gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .gallery img {
+    gap: 10px; /* Tambahkan sedikit celah antar kotak */
+    padding: 30px; /* Tambahkan padding untuk area galeri */
+    box-sizing: border-box; /* Pastikan padding tidak menambah ukuran grid */
+}
+
+.gallery img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 0; /* Hilangkan radius agar kotak rapat */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  .gallery button {
+    transition: transform 0.3s ease; /* Efek hover untuk estetika */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Perbesar sedikit saat hover */
+}
+
+.gallery button {
     background-color: #28a745;
-    color: white;
+    color: white; /* Ubah warna teks untuk kontras lebih baik */
     border: none;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Perbesar padding tombol */
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem; /* Perbesar ukuran teks tombol */
     cursor: pointer;
-    margin-top: 20px;
-  }
-  .gallery button:hover {
+    margin-top: 30px; /* Tambahkan jarak atas tombol */
+    transition: background-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+.gallery button:hover {
     background-color: #218838;
-  }
-  body,
+}
+
+@media (max-width: 768px) {
+    .gallery-section {
+        padding: 50px 20px; /* Kurangi padding untuk layar kecil */
+    }
+
+    .gallery button {
+        font-size: 1rem; /* Sesuaikan ukuran tombol */
+    }
+}
+
+
+  /*end section gallery*/
+
+  /*pesan mudah*/
+
+  /* Latar belakang untuk keseluruhan halaman */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(240, 240, 240); /* Menggunakan warna latar belakang abu-abu terang */
+  font-family: 'Arial', sans-serif;
+  text-align: center; /* Agar kotak konten berada di tengah */
+}
+
+/* Gaya untuk judul utama */
+h1.custom-title {
+  text-align: center;
+  color: #000000;
+  font-family: 'Arial', sans-serif;
+  padding: 15px;
+  margin: 0 auto;
+  font-size: 24px; /* Ukuran font sedang */
+  max-width: 600px; /* Lebar judul dibatasi */
+  border-radius: 12px;
+}
+
+/* Gaya untuk heading lainnya */
+h2, h3, h4 {
+  font-family: 'Arial', sans-serif;
+  color: #333333;
+}
+
+h2 {
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 18px; /* Ukuran font lebih kecil */
+}
+
+h3 {
+  margin-top: 15px;
+  color: rgb(0, 0, 0); /* Hijau */
+  font-size: 18px; /* Ukuran font lebih kecil */
+}
+
+h4 {
+  margin-top: 15px;
+  color: rgb(0, 0, 0); /* Merah */
+  font-size: 18px; /* Ukuran font lebih kecil */
+}
+
+/* Gaya untuk daftar custom */
+.custom-list {
+  margin: 5px 0 0 10px; /* Jarak dari heading */
+  padding: 0;
+}
+
+.custom-list p {
+  margin: 5px 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px; /* Ukuran font lebih kecil */
+  color: #555555;
+  text-indent: 20px; /* Jarak ke dalam untuk poin */
+}
+
+/* Wrapper untuk konten */
+.content {
+  display: inline-block; /* Agar kotak sesuai dengan lebar konten */
+  width: 50%; /* Lebar lebih kecil dari 80% */
+  max-width: 400px; /* Lebar maksimum kotak */
+  margin: 30px auto;
+  background-color: #ffffff; /* Latar belakang konten tetap putih */
+  padding: 10px; /* Kurangi padding untuk mengurangi ukuran kotak */
+  border: 1px solid #ddd; /* Border tipis */
+  border-radius: 15px; /* Border membulat */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  text-align: left; /* Menjaga teks rata kiri di dalam konten */
+}
+
+/*end pesan mudah*/
+
+/*section review*/
+
+body,
   html {
     margin: 0;
     padding: 0;
@@ -418,7 +481,7 @@
     text-align: center;
     background-color: #fff;
     border-radius: 15px;
-    border: 2px solid #333;
+    border: 2px solid #ac9494;
     width: 550px;
     padding: 20px;
     position: relative; /* Agar .profile diposisikan relatif terhadap review-box */
@@ -451,9 +514,11 @@
     color: #333;
     margin-top: 10px;
   }
-  
-  
-  /* Footer */
+
+  /*end section review*/
+
+  /*section footer*/
+
   /* General footer styles */
   footer {
     background-color: #fff;
