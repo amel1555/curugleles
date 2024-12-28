@@ -151,10 +151,23 @@
 
       <!--Footer -->
     <footer>
-      <div class="footer-container">
-        <div class="footer-section logo-section">
-          <h2>Nyurug Kuy</h2>
-          <p>Temukan Keindahan Alam di Curug Leles</p>
+    <div class="footer-container">
+  <footer class="footer">
+    <div class="subscription-container">
+      <p class="subscription-text">
+        Daftar untuk mendapatkan informasi, berita terbaru, dan penawaran menarik lainnya tentang Buper Curug Leles
+      </p>
+      <form class="subscription-form">
+        <input type="email" placeholder="Email" class="email-input" required />
+        <button type="submit" class="subscribe-button">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="footer-sections">
+      <div class="footer-section logo-section">
+        <h2>Nyurug Kuy</h2>
+        <p>Temukan Keindahan Alam </p>
+        <p>di Curug Leles</p>
       </div>
       <div class="footer-section">
         <h3>Contact</h3>
@@ -165,21 +178,24 @@
         <a href="#">About</a>
       </div>
       <div class="footer-section app-section">
+      <div class="social-icons">
+      <a href="#"><img src="assets/images/logo-fb.webp" alt="Facebook" /></a>
+        <a href="#"><img src="assets/images/logo-ig.webp" alt="Instagram" /></a>
+           </div>
+
         <h3>Discover our app</h3>
         <div class="app-links">
           <a href="#"><img src="assets/images/playstore.webp" alt="Get it on Google Play" /></a>
           <a href="#"><img src="assets/images/appstore.webp" alt="Available on the App Store" /></a>
         </div>
       </div>
-      <div class="social-icons">
-        <a href="#"><img src="assets/images/logo-fb.webp" alt="Facebook" /></a>
-        <a href="#"><img src="assets/images/logo-ig.webp" alt="Instagram" /></a>
-      </div>
     </div>
+
     <div class="footer-bottom">
       <p>All rights reserved © Nyurug.Kuy</p>
     </div>
   </footer>
+</div>
 
   <!-- End Footer -->
 
