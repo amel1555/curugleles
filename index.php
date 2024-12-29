@@ -110,46 +110,76 @@
     </div>
 
     <!-- pesan mudah-->
-      <h1 class="custom-title">Pesan Liburanmu dengan Mudah dan Cepat</h1>
-        <div class="content">
-          <!-- Nomor 1 -->
-          <h2>1. Pilih Destinasi Wisata</h2>
-            <div class="custom-list">
-              <p>a. Bumi Perkemahan Curug Leles</p>
-              <p>b. Curug Leles</p>
-              <p>c. Kolam Pemandian</p>
+    <section id="pesan-mudah" class="pesan-mudah">
+        <div class="container">
+            <header class="header">
+                <h1>Pesan Liburanmu Selanjutnya dalam 3 Langkah</h1>
+                <p>Mudah dan Cepat</p>
+            </header>
+
+            <div class="content">
+                <div class="steps">
+                    <div class="step">
+                        <div class="icon yellow"></div>
+                        <div class="text">
+                            <h3>Pilih Destinasi</h3>
+                            <ul>
+                                <li>Buper: Nikmati suasana alam yang tenang.</li>
+                                <li>Curug Leles: Temukan keindahan air terjun yang menakjubkan.</li>
+                                <li>Kolam Pemandian: Bersantai di kolam alami yang segar.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="icon orange"></div>
+                        <div class="text">
+                            <h3>Lakukan Pembayaran</h3>
+                            <p>Bayar reservasi melalui metode yang tersedia seperti QRIS.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="icon green"></div>
+                        <div class="text">
+                            <h3>Siapkan Perlengkapan</h3>
+                            <p>Bawa semua perlengkapan camping yang diperlukan sebelum berangkat.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="curug.jpg" alt="Curug" class="card-image">
+                    <div class="card-info">
+                        <h4>Perjalanan ke Curug</h4>
+                        <p>14-16 Okt | by Amelia Nurul</p>
+                        <div class="card-meta">
+                            <span>24 orang pergi</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- section review -->
+      <section id="ulasan-pelanggan" class="ulasan-pelanggan">
+        <div class="container">
+            <h1>Ulasan Memukau : Suara Pelanggan Kami</h1>
+            <div class="testimonial">
+                <div class="background-image">
+                    <img src="assets/images/Background 1.jpg" alt="Camping Background">
+                </div>
+                <div class="quote-box">
+                    <img src="assets/images/ulasan_amel.jpg" alt="Amelia Nurul Islamiyah" class="profile-image">
+                    <p class="quote">
+                        "Pengalaman yang luar biasa! Tempat ini menawarkan suasana alam yang menenangkan dan kolam alami yang aman untuk semua usia. Cocok untuk relaksasi keluarga atau sekadar menikmati keindahan alam. Sangat direkomendasikan!"
+                    </p>
+                    <p class="author">-Amelia Nurul Islamiyah</p>
+                </div>
             </div>
-
-          <!-- Nomor 2 -->
-          <h3>2. Lengkapi Data Diri dan Informasi Pesanan</h3>
-            <div class="custom-list">
-            <p>a. Isi nama lengkap</p>
-            <p>b. Masukkan nomor telepon</p>
-            <p>c. Tambahkan email untuk konfirmasi</p>
-          </div>
-
-          <!-- Nomor 3 -->
-          <h4>3. Selesaikan Pembayaran</h4>
-            <div class="custom-list">
-            <p>a. Pilih metode pembayaran</p>
-            <p>b. Lakukan pembayaran sesuai instruksi</p>
-            <p>c. Konfirmasi pembayaran untuk mendapatkan tiket</p>
-          </div>
-      </div>
-
-      <!--Section Review-->
-      <div class="review-section">
-        <div class="review-box">
-          <div class="profile-ulasan"></div>
-          <h3 class="review-name">Amelia Nurul Islamiyah</h3>
-          <p class="review-text">
-            "Pengalaman yang luar biasa! Tempat ini menawarkan suasana alam yang menenangkan serta kolam alami yang aman untuk semua usia. Cocok untuk relaksasi keluarga atau sekadar menikmati keindahan alam. Sangat direkomendasikan!"
-          </p>
         </div>
-      </div>
+    </section>
 
-
-      <!--Footer -->
+    <!--Footer -->
     <footer>
     <div class="footer-container">
   <footer class="footer">
@@ -166,8 +196,7 @@
     <div class="footer-sections">
       <div class="footer-section logo-section">
         <h2>Nyurug Kuy</h2>
-        <p>Temukan Keindahan Alam </p>
-        <p>di Curug Leles</p>
+        <p>Temukan Keindahan Alam di Curug Leles</p>
       </div>
       <div class="footer-section">
         <h3>Contact</h3>
@@ -212,5 +241,3 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
-
-

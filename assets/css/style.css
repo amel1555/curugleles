@@ -139,19 +139,23 @@
 .service-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
 .service-box {
-    background: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 30px;
-    width: 240px;
-    padding: 25px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Mengatur arah elemen anak menjadi kolom */
+  align-items: center; /* Menyelaraskan elemen anak secara horizontal */
+  justify-content: center; /* Menyelaraskan elemen anak secara vertikal jika diperlukan */
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 30px;
+  width: 380px;
+  padding: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .service-box:hover {
@@ -160,14 +164,14 @@
 
 .icon {
     font-size: 2.5rem;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     color: #6c63ff;
 }
 
 .service-box h3 {
     font-family: Arial, sans-serif; /* Menggunakan Arial */
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-weight: bold; /* Bold */
 }
 
@@ -237,7 +241,7 @@
   display: flex;
   gap: 20px;
   background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #ffffff;
   border-radius: 10px;
   padding: 28px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -275,7 +279,7 @@
   text-align: center;
   padding: 50px 50px; /* Perbesar padding untuk menambah area abu-abu */
   color: black;
-  background-color: #e9e3e3;
+  background-color: #eaf4f0;
   max-width: 1400px; /* Perbesar batas maksimum lebar galeri */
   margin-bottom: 50px; /* Pusatkan galeri di tengah halaman */
   padding: 35px 0; /* Tambahkan padding atas dan bawah */
@@ -347,268 +351,320 @@
 
 /*section pesan mudah*/
 
-/*pesan mudah*/
-
-  /* Latar belakang untuk keseluruhan halaman */
-  body {
-    margin: 0; /* Hilangkan margin */
-    paddin 0; /* Tambahkan padding atas dan bawah */
-    background-color: rgb(240, 240, 240); /* Menggunakan warna latar belakang abu-abu terang */
-    font-family: 'Arial', sans-serif;
-    text-align: center; /* Agar kotak konten berada di tengah */
-}
-
-/* Gaya untuk judul utama */
-h1.custom-title {
-    text-align: center;
-    color: #000000;
-    font-family: 'Arial', sans-serif;
-    padding: 40px 0; /* Kurangi padding atas dan bawah */
-    margin: 0 auto 20px auto; /* Kurangi margin bawah untuk mendekatkan ke konten berikutnya */
-    font-size: 30px; /* Ukuran font sedang */
-    font-weight: bold;
-    max-width: 1000px; /* Lebar judul dibatasi */
-    border-radius: 12px;
-}
-
-/* Gaya untuk heading lainnya */
-h2, h3, h4 {
-    font-family: 'Arial', sans-serif;
-    color: #333333;
-}
-
-h2 {
-    margin-top: 10px;
-    color: rgb(0, 0, 0);
-    font-size: 18px; /* Ukuran font lebih kecil */
-}
-
-h3 {
-    margin-top: 15px;
-    color: rgb(0, 0, 0); /* Hijau */
-    font-size: 18px; /* Ukuran font lebih kecil */
-}
-
-h4 {
-    margin-top: 15px;
-    color: rgb(0, 0, 0); /* Merah */
-    font-size: 18px; /* Ukuran font lebih kecil */
-}
-
-/* Gaya untuk daftar custom */
-.custom-list {
-    margin: 10px; /* Jarak dari heading */
-    padding: 0px;
-}
-
-.custom-list p {
-    margin: 10px 0;
-    font-family: 'Arial', sans-serif;
-    font-size: 15px; /* Ukuran font lebih kecil */
-    color: #555555;
-    text-indent: 20px; /* Jarak ke dalam untuk poin */
-}
-
-/* Wrapper untuk konten */
-.content {
-    display: inline-block; /* Agar kotak sesuai dengan lebar konten */
-    width: 50%; /* Lebar lebih kecil dari 80% */
-    max-width: 400px; /* Lebar maksimum kotak */
-    margin: 60px auto; /* Kurangi jarak vertikal untuk mendekatkan elemen */
-    background-color: #ffffff; /* Latar belakang konten tetap putih */
-    padding: 15px; /* Sedikit menambah padding untuk kenyamanan konten */
-    border: 1px solid #ddd; /* Border tipis */
-    border-radius: 15px; /* Border membulat */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
-    text-align: left; /* Menjaga teks rata kiri di dalam konten */
-}
-
-
-  /*end section pesan mudah*/
-
-  /*section review*/
-
-body,
-html {
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  height: 100%;
+  background-color: #ffffff;
+  color: #333;
 }
 
-.review-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-image: url("../images/Background\ 1.jpg");
-  position: relative;
-  padding: 300px 300px;
-}
-
-.review-box {
-  text-align: center;
+/* Isolasi Section Pesan Mudah */
+#pesan-mudah {
   background-color: #fff;
-  border-radius: 15px;
-  border: 2px solid #ac9494;
-  width: 550px;
-  padding: 20px;
-  position: relative; /* Agar .profile diposisikan relatif terhadap review-box */
+  padding: 30px 20px;
+  margin: 50px auto;
 }
 
-.profile-ulasan {
-  background-image: url("../images/ulasan_amel.jpg");
-  background-size: cover; /* Gambar memenuhi area lingkaran */
-  background-position: calc(100% + -10px) center;
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: -40px; /* Setengah dari tinggi elemen, keluar dari review-box */
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 50%; /* Membuat bentuk lingkaran */
-  border: 3px solid #fff; /* Tambahkan border putih agar terlihat kontras */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.review-name {
-  margin-top: 40px; /* Mengatur jarak agar teks tidak tertutup gambar */
-  font-size: 24px;
+.header h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 16px;
+  color: #666;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.steps {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.yellow {
+  background-color: #ffd700;
+}
+
+.orange {
+  background-color: #ff8c00;
+}
+
+.green {
+  background-color: #32cd32;
+}
+
+.text h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.text p, .text ul {
+  font-size: 14px;
+  margin: 0;
+  color: #555;
+  text-align: left;
+}
+
+.text ul li {
+  margin-bottom: 5px;
+}
+
+.card {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.card-info h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.card-info p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.card-meta span {
+  font-size: 14px;
   font-weight: bold;
   color: #333;
 }
 
-.review-text {
-  font-size: 16px;
-  line-height: 1.5;
+/*end section pesan mudah*/
+
+/*section review*/
+
+section {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
   color: #333;
-  margin-top: 10px;
+}
+
+/* Section Ulasan Pelanggan */
+.ulasan-pelanggan {
+  background-color: #eaf4f0;
+  padding: 50px 50px;
+  text-align: center;
+}
+
+.ulasan-pelanggan .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ulasan-pelanggan h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Testimonial Section */
+.testimonial {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image img {
+  background-size: 100px;
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.quote-box {
+  position: absolute;
+  bottom: -50px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.profile-image {
+  background-image: url("../images/ulasan_amel.jpg");
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: -50px;
+  border: 3px solid #eaf4f0;
+}
+
+.quote {
+  font-size: 16px;
+  color: #555;
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.author {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
 }
 
 /*end section review*/
 
 /*section footer*/
 
-  .section.footer {
-    font-family: Arial, sans-serif;
-    margin-bottom: auto;
-    display: flex;
-    flex-direction: column;
-  }
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .footer-container {
-    background-color: #ffffff;
-    padding-top: 100px;
-  }
+.footer {
+  background-color: #ffffff;
+  padding: 30px 15px;
+}
 
-  .footer {
-    text-align: center;
-  }
+.subscription-container {
+  background-color: #e9fdfd;
+  border-radius: 10px;
+  padding: 60px;
+  margin: 0 auto 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
 
-  .subscription-container {
-    background-color: #e9fdfd;
-    border-radius: 10px;
-    padding: 30px 20px; /* Kurangi padding */
-    margin: 0 auto 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 450px; /* Sesuaikan ukuran */  
-  }
+.subscription-text {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 20px;
+}
 
-  .subscription-text {
-    font-size: 20px;
-    font-style: normal;
-    color: #333;
-    margin-bottom: 20px;
-  }
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 
-  .subscription-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
+.email-input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
 
-  .email-input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    flex: 1;
-    font-size: 14px;
-  }
+.subscribe-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  .subscribe-button {
-    padding: 10px 10px;
-    background-color: #28a745;
-    color: #000000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-  }
+.subscribe-button:hover {
+  background-color: #218838;
+}
 
-  .subscribe-button:hover {
-    background-color: #218838;
-  }
+.footer-sections {
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 0;
+}
 
-  .footer-sections {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin: 200px 0;
-  }
+.footer-section {
+  text-align: center;
+  margin: 10px 0;
+  flex: 1;
+  font-size: 15px;
+}
 
-  .footer-section {
-    flex: 1;
-    min-width: 50px;
-    text-align: center;
-    color: black;
-    line-height: 20px;
-  }
+.footer-section h3 {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+}
 
-  .footer-section h3 {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-  }
+.footer-section a {
+  font-size: 13px;
+  color: #007bff;
+  text-decoration: none;
+}
 
-  .footer-section a {
-    color: #007bff;
-    text-decoration: none;
-    font-size: 14px;
-  }
+.footer-section a:hover {
+  color: #0056b3;
+}
 
-  .footer-section a:hover {
-    text-decoration: underline;
-    color: #000000;
-  }
+.app-links img {
+  width: 120px;
+  margin: 5px;
+}
 
-  /*app links*/
-  
-  .app-links img {
-    width: 50px;
-    margin: 0;
-  }
+.social-icons a img {
+  width: 30px;
+  margin: 0 5px;
+}
 
-  /*social media icons*/
-  
-  .social-icons {
-    margin-bottom:  30px 0;
-  }
-  
-  .social-icons a img {
-    width: 30px;
-    margin: 0 10px;
-  }
 
-  /*footer bottom*/
-  
-  .footer-bottom {
-    background-color: #ffffff;
-    margin-top: 10px 0; 
-    font-size: 12px; /* Kurangi ukuran font */
-    color: #333;
+/* Footer Bottom */
+
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin-top: 20px;
 }
 
 /*end section footer*/
-  
-  
