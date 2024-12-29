@@ -98,12 +98,12 @@
     <div class="gallery-section">
         <h2>Galeri Pengunjung</h2>
         <div class="gallery">
-        <img src="assets/images/galeri pengunjung 1.jpg" alt="Foto Pengunjung 1" />
-        <img src="assets/images/galeri pengunjung 2.jpg" alt="Foto Pengunjung 2" />
-        <img src="assets/images/galeri pengunjung 3.jpg" alt="Foto Pengunjung 3" />
-        <img src="assets/images/galeri pengunjung 4.jpg" alt="Foto Pengunjung 4" />
-        <img src="assets/images/galeri pengunjung 5.jpg" alt="Foto Pengunjung 5" />
-        <img src="assets/images/galeri pengunjung 5.jpg" alt="Foto Pengunjung 6" />
+        <img src="assets/images/galeri_2.jpg" alt="Foto Pengunjung 1" />
+        <img src="assets/images/galeri_1.jpg" alt="Foto Pengunjung 2" />
+        <img src="assets/images/galeri_4.jpg" alt="Foto Pengunjung 3" />
+        <img src="assets/images/galeri_6.jpg" alt="Foto Pengunjung 4" />
+        <img src="assets/images/galeri_5.jpg" alt="Foto Pengunjung 5" />
+        <img src="assets/images/galeri_3.jpg" alt="Foto Pengunjung 6" />
       </div>
       </section>
 

@@ -317,7 +317,7 @@
 
 @media (max-width: 768px) {
   .gallery-section {
-      padding: 50px 50px; /* Kurangi padding untuk layar kecil */
+      padding: 50px 20x; /* Kurangi padding untuk layar kecil */
   }
 
   .gallery button {
