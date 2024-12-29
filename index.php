@@ -95,7 +95,7 @@
     </section>
 
     <!--Section Gallery-->
-      <div class="gallery-section">
+    <div class="gallery-section">
         <h2>Galeri Pengunjung</h2>
         <div class="gallery">
         <img src="assets/images/galeri pengunjung 1.jpg" alt="Foto Pengunjung 1" />
@@ -105,9 +105,8 @@
         <img src="assets/images/galeri pengunjung 5.jpg" alt="Foto Pengunjung 5" />
         <img src="assets/images/galeri pengunjung 5.jpg" alt="Foto Pengunjung 6" />
       </div>
-    
-      <button class="Lainnya">Lainnya</button>
-    </div>
+      </section>
+
 
     <!-- pesan mudah-->
     <section id="pesan-mudah" class="pesan-mudah">
@@ -149,7 +148,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="curug.jpg" alt="Curug" class="card-image">
+                    <img src="assets/images/curug leles 1.jpg" alt="Curug" class="card-image">
                     <div class="card-info">
                         <h4>Perjalanan ke Curug</h4>
                         <p>14-16 Okt | by Amelia Nurul</p>
@@ -170,7 +169,7 @@
                 </div>
                 <div class="quote-box">
                     <img src="assets/images/ulasan_amel.jpg" alt="Amelia Nurul Islamiyah" class="profile-image">
-                    <p class="quote">
+                    <div class="quote">
                         "Pengalaman yang luar biasa! Tempat ini menawarkan suasana alam yang menenangkan dan kolam alami yang aman untuk semua usia. Cocok untuk relaksasi keluarga atau sekadar menikmati keindahan alam. Sangat direkomendasikan!"
                     </p>
                     <p class="author">-Amelia Nurul Islamiyah</p>
