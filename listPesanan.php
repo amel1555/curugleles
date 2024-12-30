@@ -72,6 +72,8 @@ if ($result->num_rows > 0) {
                               <td><?= htmlspecialchars($pemesanan['hp_pemesan']); ?></td>
                               <td><?= htmlspecialchars($pemesanan['total_tagihan']); ?></td>
                               <td>
+                                <a href="controllers/detail.php?id_pemesanan=<?= $pemesanan['id_pemesanan']; ?>" 
+                                class="btn btn-primary btn-sm">Detail</a>
                                   <a href="controllers/delete.php?id_pemesanan=<?= $pemesanan['id_pemesanan']; ?>" 
                                     class="btn btn-danger btn-sm" 
                                     onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">
