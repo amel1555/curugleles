@@ -98,35 +98,13 @@ $detail = mysqli_fetch_assoc($query);
                     </div>
                 </div>
                 <div class="card-footer">
-                    <!-- Tombol Cetak yang sudah diubah menjadi merah -->
-                    <button type="button" class="btn btn-danger" id="btn-cetak">Cetak PDF</button>
-                </div>
-            </div>
-        </form>
-    </div>
+				<div class="card-footer d-print-none">
+						<a href="#" onclick="window.print()" class="btn btn-success">Cetak</a>
+  					</div>
+				</div>
+
 
     <!-- Menambahkan pustaka jsPDF -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script>
-        document.getElementById('btn-cetak').addEventListener('click', function() {
-            const { jsPDF } = window.jspdf;
-            const doc = new jsPDF();
-
-            // Ambil konten dari elemen dengan ID form-pemesanan
-            const content = document.getElementById('form-pemesanan');
-
-            // Tambahkan konten ke PDF dengan menggunakan method 'html'
-            doc.html(content, {
-                callback: function (doc) {
-                    // Setelah PDF selesai dibuat, unduh file PDF
-                    doc.save('detail_pemesanan.pdf');
-                },
-                margin: [10, 10, 10, 10],
-                x: 10,
-                y: 10
-            });
-        });
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
