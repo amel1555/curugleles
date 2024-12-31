@@ -56,7 +56,6 @@ if ($result->num_rows > 0) {
                                 <th scope="col">No</th>
                                 <th scope="col">Nama Pemesan</th>
                                 <th scope="col">Nomor Telepon</th>
-                                <th scope="col">Paket Wisata</th>
                                 <th scope="col">Total Harga</th>
                                 <th scope="col">Aksi</th>
                             </tr>
@@ -68,7 +67,6 @@ if ($result->num_rows > 0) {
                                         <th scope="row"><?= $index + 1; ?></th>
                                         <td><?= htmlspecialchars($pemesanan['nama_pemesanan']); ?></td>
                                         <td><?= htmlspecialchars($pemesanan['hp_pemesan']); ?></td>
-                                        <td><?= htmlspecialchars($pemesanan['paket_wisata']); ?></td>
                                         <td>Rp. <?= number_format($pemesanan['total_tagihan'], 0, ',', '.'); ?></td>
                                         <td>
                                             <a href="controllers/detail.php?id_pemesanan=<?= $pemesanan['id_pemesanan']; ?>" 

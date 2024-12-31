@@ -57,7 +57,7 @@
                     <div class="col-md-4">
                         <div class="mb-3">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="paket_inap" value="Penginapan" onchange="updatePaketWisata(); calculateTotal();">
+                                <input type="checkbox" class="form-check-input" id="paket_inap" name="paket_inap" value="1000000" onchange="calculateTotal();">
                                 <label class="form-check-label" for="paket_inap">Penginapan (Rp. 1.000.000)</label>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                     <div class="col-md-4">
                         <div class="mb-3">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="paket_transport" value="Transportasi" onchange="updatePaketWisata(); calculateTotal();">
+                                <input type="checkbox" class="form-check-input" id="paket_transport" name="paket_transport" value="1200000" onchange="calculateTotal();">
                                 <label class="form-check-label" for="paket_transport">Transportasi (Rp. 1.200.000)</label>
                             </div>
                         </div>
@@ -73,13 +73,12 @@
                     <div class="col-md-4">
                         <div class="mb-3">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="paket_makan" value="Service/Makan" onchange="updatePaketWisata(); calculateTotal();">
+                                <input type="checkbox" class="form-check-input" id="paket_makan" name="paket_makan" value="500000" onchange="calculateTotal();">
                                 <label class="form-check-label" for="paket_makan">Service/Makan (Rp. 500.000)</label>
                             </div>
                         </div>
                     </div>
                 </div>
-                <input type="hidden" id="paket_wisata" name="paket_wisata">
                 <div class="row mb-2">
                     <div class="col-md-6">
                         <label class="form-label">Jumlah Peserta</label>
@@ -106,21 +105,10 @@
     </main>
 
     <script>
-        function updatePaketWisata() {
-            const checkboxes = document.querySelectorAll('.form-check-input');
-            const selectedPaket = [];
-            checkboxes.forEach((checkbox) => {
-                if (checkbox.checked) {
-                    selectedPaket.push(checkbox.value);
-                }
-            });
-            document.getElementById('paket_wisata').value = selectedPaket.join(', ');
-        }
-
         function calculateTotal() {
-            const paketInap = document.getElementById('paket_inap').checked ? 1000000 : 0;
-            const paketTransport = document.getElementById('paket_transport').checked ? 1200000 : 0;
-            const paketMakan = document.getElementById('paket_makan').checked ? 500000 : 0;
+            const paketInap = document.getElementById('paket_inap').checked ? parseInt(document.getElementById('paket_inap').value) : 0;
+            const paketTransport = document.getElementById('paket_transport').checked ? parseInt(document.getElementById('paket_transport').value) : 0;
+            const paketMakan = document.getElementById('paket_makan').checked ? parseInt(document.getElementById('paket_makan').value) : 0;
 
             const hargaPaket = paketInap + paketTransport + paketMakan;
             const jumlahPeserta = parseInt(document.getElementById('jumlah_peserta').value) || 0;
